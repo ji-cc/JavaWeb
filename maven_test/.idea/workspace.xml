@@ -31,11 +31,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,34 +56,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1602238718318" />
-    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser" timestamp="1602244142971">
+    <state x="362" y="188" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1602250351877">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602244142971" />
+    <state x="362" y="188" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.728@0.0.1366.728" timestamp="1602250351877" />
+    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser" timestamp="1602502692659">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602502692659" />
     <state x="413" y="62" key="FileChooserDialogImpl" timestamp="1601378468495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601378468495" />
-    <state width="1312" height="254" key="GridCell.Tab.0.bottom" timestamp="1602247510697">
+    <state width="1312" height="28" key="GridCell.Tab.0.bottom" timestamp="1602504604524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="254" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602247510697" />
-    <state width="1312" height="254" key="GridCell.Tab.0.center" timestamp="1602247510697">
+    <state width="1312" height="28" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602504604524" />
+    <state width="1312" height="28" key="GridCell.Tab.0.center" timestamp="1602504604523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="254" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602247510697" />
-    <state width="1312" height="254" key="GridCell.Tab.0.left" timestamp="1602247510697">
+    <state width="1312" height="28" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602504604523" />
+    <state width="1312" height="28" key="GridCell.Tab.0.left" timestamp="1602504604523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="254" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602247510697" />
-    <state width="1312" height="254" key="GridCell.Tab.0.right" timestamp="1602247510697">
+    <state width="1312" height="28" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602504604523" />
+    <state width="1312" height="28" key="GridCell.Tab.0.right" timestamp="1602504604523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="254" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602247510697" />
-    <state x="68" y="0" key="SettingsEditor" timestamp="1602156274496">
+    <state width="1312" height="28" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602504604523" />
+    <state x="68" y="0" key="SettingsEditor" timestamp="1602315066708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="68" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602156274496" />
+    <state x="68" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602315066708" />
     <state x="0" y="7" key="new project wizard" timestamp="1601378514699">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

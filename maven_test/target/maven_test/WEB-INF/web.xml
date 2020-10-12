@@ -24,4 +24,60 @@
     <url-pattern>/CalcServlet</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ServletDemo1</servlet-name>
+    <servlet-class>servlet_test.ServletDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo1</servlet-name>
+    <url-pattern>/ServletDemo1</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ServletDemo2</servlet-name>
+    <servlet-class>servlet_test.ServletDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo2</servlet-name>
+    <url-pattern>/ServletDemo2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ServletDemo3</servlet-name>
+    <servlet-class>servlet_test.ServletDemo3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo3</servlet-name>
+    <url-pattern>/ServletDemo3</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ServletDemo4</servlet-name>
+    <servlet-class>servlet_test.ServletDemo4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo4</servlet-name>
+    <url-pattern>/ServletDemo4</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ServletDemo5</servlet-name>
+    <servlet-class>servlet_test.ServletDemo5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo5</servlet-name>
+    <url-pattern>/ServletDemo5</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ServletDemo6</servlet-name>
+    <servlet-class>servlet_test.ServletDemo6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo6</servlet-name>
+    <url-pattern>/ServletDemo6</url-pattern>
+  </servlet-mapping>
+
 </web-app>

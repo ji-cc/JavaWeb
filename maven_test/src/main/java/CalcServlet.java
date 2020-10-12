@@ -16,4 +16,5 @@ public class CalcServlet extends HttpServlet {
         int result = a + b;
         resp.getWriter().write(String.format("<h1>result = %d</h1>", result));
     }
+     
 }
