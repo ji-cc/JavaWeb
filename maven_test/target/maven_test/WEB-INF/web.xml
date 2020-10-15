@@ -80,4 +80,40 @@
     <url-pattern>/ServletDemo6</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ServletDemo7</servlet-name>
+    <servlet-class>servlet_test.ServletDemo7</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo7</servlet-name>
+    <url-pattern>/ServletDemo7</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ServletDemo8</servlet-name>
+    <servlet-class>servlet_test.ServletDemo8</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo8</servlet-name>
+    <url-pattern>/ServletDemo8</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ServletDemo9</servlet-name>
+    <servlet-class>servlet_test.ServletDemo9</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo9</servlet-name>
+    <url-pattern>/ServletDemo9</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ServletDemo10</servlet-name>
+    <servlet-class>servlet_test.ServletDemo10</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDemo10</servlet-name>
+    <url-pattern>/uploadServlet</url-pattern>
+  </servlet-mapping>
+
 </web-app>

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f23c86d4-e5b1-4d4d-bb77-7e19063924c0" name="Default Changelist" comment="" />
+    <list default="true" id="f23c86d4-e5b1-4d4d-bb77-7e19063924c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/UpLoad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven_test.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven_test.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven_test/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven_test/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +38,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1iB6UHERNIOQcC2Y6am1HyHZ8vH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="flattenModules" value="true" />
@@ -31,12 +48,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\编程\bite资料\javaweb\practice\JavaWeb\maven_test\src\main\webapp" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,38 +83,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="362" y="188" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.728@0.0.1366.728" timestamp="1602250351877" />
-    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser" timestamp="1602502692659">
+    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser" timestamp="1602659492541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602502692659" />
-    <state x="413" y="62" key="FileChooserDialogImpl" timestamp="1601378468495">
+    <state x="888" y="13" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602659492541" />
+    <state x="431" y="229" width="503" height="281" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602749088902">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601378468495" />
-    <state width="1312" height="28" key="GridCell.Tab.0.bottom" timestamp="1602504604524">
+    <state x="431" y="229" width="503" height="281" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1602749088902" />
+    <state x="413" y="62" key="FileChooserDialogImpl" timestamp="1602753226225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="28" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602504604524" />
-    <state width="1312" height="28" key="GridCell.Tab.0.center" timestamp="1602504604523">
+    <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602753226225" />
+    <state width="1312" height="24" key="GridCell.Tab.0.bottom" timestamp="1602753257677">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="28" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602504604523" />
-    <state width="1312" height="28" key="GridCell.Tab.0.left" timestamp="1602504604523">
+    <state width="1312" height="24" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602753257677" />
+    <state width="1312" height="24" key="GridCell.Tab.0.center" timestamp="1602753257677">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="28" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602504604523" />
-    <state width="1312" height="28" key="GridCell.Tab.0.right" timestamp="1602504604523">
+    <state width="1312" height="24" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602753257677" />
+    <state width="1312" height="24" key="GridCell.Tab.0.left" timestamp="1602753257676">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="28" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602504604523" />
-    <state x="68" y="0" key="SettingsEditor" timestamp="1602315066708">
+    <state width="1312" height="24" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602753257676" />
+    <state width="1312" height="24" key="GridCell.Tab.0.right" timestamp="1602753257677">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="68" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602315066708" />
-    <state x="0" y="7" key="new project wizard" timestamp="1601378514699">
+    <state width="1312" height="24" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602753257677" />
+    <state x="39" y="0" key="SettingsEditor" timestamp="1602669018058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="7" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1601378514699" />
+    <state x="39" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602669018057" />
+    <state x="0" y="0" key="new project wizard" timestamp="1602753254233">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1602753254233" />
     <state x="255" y="153" key="run.anything.popup" timestamp="1602160586652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
