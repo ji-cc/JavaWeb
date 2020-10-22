@@ -3,9 +3,12 @@ package model;
 public class Article {
     private  int articleId;
     private  String title;
-    private  String password;
+    private String content;
+    private int userId;
 
     // alt + insert:代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等
+
+
     public int getArticleId() {
         return articleId;
     }
@@ -22,11 +25,19 @@ public class Article {
         this.title = title;
     }
 
-    public String getPassword() {
-        return password;
+    public String getContent() {
+        return content;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 }
