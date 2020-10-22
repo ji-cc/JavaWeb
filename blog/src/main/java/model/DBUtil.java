@@ -47,7 +47,7 @@ public class DBUtil {
        return  dataSource;
     }
     // 通过这个方法来获取连接
-    public Connection getConnection() {
+    public static Connection getConnection() {
         try {
             return getDataSource().getConnection();
         } catch (SQLException e) {
