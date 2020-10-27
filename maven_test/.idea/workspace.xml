@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f23c86d4-e5b1-4d4d-bb77-7e19063924c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet_test/ServletDemo9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/UpLoad.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven_test.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven_test.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven_test/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven_test/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/model/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/model/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
