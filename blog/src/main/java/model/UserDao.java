@@ -4,12 +4,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.concurrent.ConcurrentNavigableMap;
+
 
 public class UserDao {
     // 1.新增用户（注册）
     // 把一个 User 对象插入到数据库中
-    void add(User user) {
+    public void add(User user) {
         // 1.获取到数据库连接
         Connection connection = DBUtil.getConnection();
         // 2.拼装 SQL 语句
@@ -36,7 +36,7 @@ public class UserDao {
 
     }
     // 2.按照名字查找用户（登录）
-    public User selsctByName(String name) {
+    public User selectByName(String name) {
         // 1.和数据库建立连接
         Connection connection = DBUtil.getConnection();
         // 2.拼装SQL
@@ -65,4 +65,18 @@ public class UserDao {
         return  null;
     }
 
+//    public static void main(String[] args) {
+//        UserDao userDao = new UserDao();
+////         1. 先测试 add 方法
+//        User user = new User();
+//        user.setName("tz");
+//        user.setPassword("1234");
+//        userDao.add(user);
+////         2. 测试 selectByName
+////        User user = userDao.selectByName("tz");
+////        System.out.println(user);
+//    }
+
 }
+
+
