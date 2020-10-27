@@ -21,7 +21,7 @@ import static com.mysql.cj.conf.PropertyKey.characterEncoding;
 // 此处使用懒汉模式
 public class DBUtil {
     private static  volatile DataSource dataSource = null;
-    private static  final  String URL = "dbc:mysql://127.0.0.1:3306/blogdemo?characterEncoding=utf-8&useSSL=true";
+    private static  final  String URL = "jdbc:mysql://127.0.0.1:3306/blogdemo?serverTimezone=UTC&useSSL=true";
     private  static final  String USERNAME = "root";
     private  static  final  String PASSWORD = "1111";
 
