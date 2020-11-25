@@ -48,18 +48,25 @@ public class HtmlGenerator {
         stringBuilder.append("a{"+
                 "color:#333;" +
                 "text-decoration:none;"+
+                "display: inline-block;" +
+                "width: 200px;" +
+                "height: 50px;" +
+                "}");
+        stringBuilder.append("a:hover {" +    // hover:表示鼠标放到上面的效果
+                "color: white;" +
+                "background-color:orange;" +
+                "}");
+        stringBuilder.append("body {" +
+                "background-image: url(\"https://tse2-mm.cn.bing.net/th/id/OIP.eesG8FM2yowPfkgFhvuSOAHaEK?pid=Api&rs=1\")" +     // 设置背景图片，从网上找到一张图片，复制图片地址
+               "background-repeat: none" +    // 让图片不要平铺
+                "background-position: 0 center" +   //  居中显示
                 "}");
         stringBuilder.append("</style>");
-
         stringBuilder.append("</head>");
         stringBuilder.append("<body>");
 
         stringBuilder.append("<h3> 欢迎您！" + user.getName() + "</h3>");
         // 有一个文章列表，显示每个文章的标题。
-        stringBuilder.append("<hr>");
-
-        stringBuilder.append("</body>");
-        stringBuilder.append("</html>");
 
         for (Article article :articles) {
             stringBuilder.append(String.format("<div style=\"width:200px;height:50px\"> <a href= \"article?articleId=%d\"> %s </a></div>",
@@ -67,6 +74,69 @@ public class HtmlGenerator {
         }
         stringBuilder.append(String.format("<hr>"));
         stringBuilder.append(String.format("<div>当前共有博客 %d 篇</div>", articles.size()));
+
+        // 在这里新增发布文章区域
+        stringBuilder.append("<div> 发布文章 </div>");
+        stringBuilder.append("<div>");
+        stringBuilder.append("<form method=\"post\" action=\"article\">");
+        stringBuilder.append("<input type=\"text\" name=\"title\" placeholder=\"请输入标题\">");
+        stringBuilder.append("<br>");
+        stringBuilder.append("<textarea name= \"content\" style=\"width: 500px;height:300px\"></textarea>");
+        stringBuilder.append("<br>");
+        stringBuilder.append("<input type=\"submit\" value=\"发布文章\">");
+
+        stringBuilder.append("</form>");
+        stringBuilder.append("</div>");
+
+
+
+
+        stringBuilder.append("</body>");
+        stringBuilder.append("</html>");
         return  stringBuilder.toString();
+    }
+
+    public static String getArticleDetailPage(Article article, User user, User author) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("<html>");
+        stringBuilder.append("<head>");
+        stringBuilder.append("<meta charset=\"utf-8\">");
+        stringBuilder.append("<title>提示页面</title>");
+        stringBuilder.append("<style>");
+        // style 标签内部就是写 CSS 的逻辑
+        stringBuilder.append("a{"+
+                "color:#333;" +
+                "text-decoration:none;"+
+                "display: inline-block;" +
+                "width: 200px;" +
+                "height: 50px;" +
+                "}");
+        stringBuilder.append("a:hover {" +    // hover:表示鼠标放到上面的效果
+                "color: white;" +
+                "background-color:orange;" +
+                "}");
+        stringBuilder.append("body {" +
+                "background-image: url(\"https://tse2-mm.cn.bing.net/th/id/OIP.eesG8FM2yowPfkgFhvuSOAHaEK?pid=Api&rs=1\")" +     // 设置背景图片，从网上找到一张图片，复制图片地址
+                "background-repeat: none" +    // 让图片不要平铺
+                "background-position: 0 center" +   //  居中显示
+                "}");
+        stringBuilder.append("</style>");
+
+        stringBuilder.append("</head>");
+        stringBuilder.append("<body>");
+
+        stringBuilder.append("<h3> 欢迎您！" + user.getName() + "</h3>");
+        stringBuilder.append("<hr>");
+
+        // 文章内容
+        stringBuilder.append(String.format("<h1>%s</h1>", article.getTitle()));
+        stringBuilder.append(String.format("<h4>作者：%s</h4>", author.getName()));
+        stringBuilder.append(String.format("<div>%s</div>", article.getContent()));
+
+
+        stringBuilder.append("</body>");
+        stringBuilder.append("</html>");
+        return  stringBuilder.toString();
+
     }
 }

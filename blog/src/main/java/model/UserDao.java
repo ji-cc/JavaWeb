@@ -65,6 +65,36 @@ public class UserDao {
         return  null;
     }
 
+    // 根据用户Id 找到用户信息
+    public User selectById(int userId) {
+        // 1.和数据库建立连接
+        Connection connection = DBUtil.getConnection();
+        // 2.拼装SQL
+        String sql = "select * from user where userId = ?";
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1, userId);
+            // 3.执行SQL
+            resultSet  = statement.executeQuery();
+            // 4.遍历结果集。 预期 name 在数据中不能重复
+            // 此处查找最多只能查出一条数据 （之前建立数据库对 name 有约束，name 属性唯一）
+            if (resultSet.next()) {
+                User user = new User();
+                user.setUserId(resultSet.getInt("userId"));
+                user.setName(resultSet.getString("name"));
+                user.setPassword(resultSet.getString("password"));
+                return user;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBUtil.close(connection, statement,resultSet);
+        }
+        return  null;
+    }
+
 //    public static void main(String[] args) {
 //        UserDao userDao = new UserDao();
 ////         1. 先测试 add 方法
