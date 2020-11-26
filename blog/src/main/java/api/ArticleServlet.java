@@ -46,8 +46,6 @@ public class ArticleServlet extends HttpServlet {
         // 2.构造页面
         String html= HtmlGenerator.getArticleListPage(articles,user);
         resp.getWriter().write(html);
-
-
     }
 
     private void getOneArticle(int articleId, User user, HttpServletResponse resp) throws IOException {
@@ -60,6 +58,8 @@ public class ArticleServlet extends HttpServlet {
             resp.getWriter().write(html);
             return;
         }
+//        // 为了验证换行消失的问题，在这个环节把 Article 中的正文打出来，看是不是带换行
+//        System.out.println("article.content:" + article.getContent());
         // 2.根据作者Id找到作者信息，进一步得到作者姓名
         UserDao userDao  = new UserDao();
         User author = userDao.selectById(article.getUserId());
@@ -72,6 +72,7 @@ public class ArticleServlet extends HttpServlet {
     // 实现新增文章的逻辑
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         resp.setContentType("text/html; charset=utf-8");
         // 1.判定用户的登录状态 ，如果用户尚未登录，就要提示用户来登录
         HttpSession httpSession = req.getSession(false);    // false:表示不存在，不会创建新的
@@ -80,11 +81,26 @@ public class ArticleServlet extends HttpServlet {
             resp.getWriter().write(html);
             return;
         }
-        User user=(User)httpSession.getAttribute("user");   //当前登录用户的信息
+        User user=(User)httpSession.getAttribute("user");   //从 session 中获取当前登录用户的信息     用户登录后在 session 中存储 user 信息
         // 2.从请求中读取浏览器提交的数据（title,content),并进行简单校验
-
+        String title = req.getParameter("title");    //获取到标题与正文
+        String content = req.getParameter("content");
+        if (title == null || "".equals(title)   // 判断是否获取到标题或正文，并且判断获取到的标题与正文是否为空字符串
+                || content == null || "".equals(content)) {
+            String html = HtmlGenerator.getMessagePage("您提交的标题或正文为空","article");
+            resp.getWriter().write(html);
+            return;
+        }
         // 3.把数据插入到数据库中
-
+        ArticleDao articleDao = new ArticleDao();
+        Article article = new Article();
+        article.setTitle(title);
+        article.setContent(content);
+        article.setUserId(user.getUserId());
+        articleDao.add(article);
         // 4.返回一个插入成功的页面
+        String html = HtmlGenerator.getMessagePage("发布成功","article");
+        resp.getWriter().write(html);
+        return;
     }
 }
