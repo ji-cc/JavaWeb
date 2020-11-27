@@ -45,14 +45,14 @@ public class HtmlGenerator {
         stringBuilder.append("<title>提示页面</title>");
         stringBuilder.append("<style>");
         // style 标签内部就是写 CSS 的逻辑
-        stringBuilder.append("a{"+
+        stringBuilder.append(".article{"+            // 此处不用 a 标签了，使用 article 类选择器，为了将文章标题与删除按钮区分开
                 "color:#333;" +
                 "text-decoration:none;"+
-                "display: inline-block;" +
+//                "display: inline-block;" +
                 "width: 200px;" +
                 "height: 50px;" +
                 "}");
-        stringBuilder.append("a:hover {" +    // hover:表示鼠标放到上面的效果
+        stringBuilder.append(".article:hover {" +    // hover:表示鼠标放到上面的效果
                 "color: white;" +
                 "background-color:orange;" +
                 "}");
@@ -68,9 +68,10 @@ public class HtmlGenerator {
         stringBuilder.append("<h3> 欢迎您！" + user.getName() + "</h3>");
         // 有一个文章列表，显示每个文章的标题。
 
-        for (Article article :articles) {
-            stringBuilder.append(String.format("<div style=\"width:200px;height:50px\"> <a href= \"article?articleId=%d\"> %s </a></div>",
-                    article.getArticleId(), article.getTitle()));
+        for (Article article :articles) {                                               // 定义类选择器
+            stringBuilder.append(String.format("<div style=\"width:200px;height:50px\"> <a class=\"article\" href= \"article?articleId=%d\"> %s </a>" +
+                            "<a href=\"deleteArticle?articleId=%d\">删除</a></div>",
+                    article.getArticleId(),article.getTitle(),article.getArticleId()));
         }
         stringBuilder.append(String.format("<hr>"));
         stringBuilder.append(String.format("<div>当前共有博客 %d 篇</div>", articles.size()));
@@ -131,7 +132,11 @@ public class HtmlGenerator {
         // 文章内容
         stringBuilder.append(String.format("<h1>%s</h1>", article.getTitle()));
         stringBuilder.append(String.format("<h4>作者：%s</h4>", author.getName()));
-        stringBuilder.append(String.format("<div>%s</div>", article.getContent()));
+        // 提交文章的时候，正文中带换行，但最终显示的文章内容中不带换行
+        // 构造正文的地方
+        // HTML 中本来就不是用 \n 表示换行的
+        // 把 \n 替换成 <br> 标签即可
+        stringBuilder.append(String.format("<div>%s</div>", article.getContent().replace("\n","<br>")));
 
 
         stringBuilder.append("</body>");

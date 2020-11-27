@@ -14,7 +14,7 @@ public class ArticleDao {
         // 1.获取数据库连接
         Connection connection = DBUtil.getConnection();
         // 2.构造 SQL
-        String sql = "insert into article values (null, ?, ?)";
+        String sql = "insert into article values (null, ?, ?,?)";
         PreparedStatement statement = null;
         try {
             statement = connection.prepareStatement(sql);
@@ -76,8 +76,9 @@ public class ArticleDao {
         try {
             statement = connection.prepareStatement(sql);
             statement.setInt(1, articleId);
-
+            // 3.执行SQL
             resultSet = statement.executeQuery();
+            // 4.遍历结果集合
             // 由于 id 是主键，不会重复，预期最多只能查出一条记录
             if (resultSet.next()) {
                Article article = new Article();
